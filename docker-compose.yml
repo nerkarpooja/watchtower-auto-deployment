@@ -1,0 +1,22 @@
+services:
+
+  app:
+    image: poojanerkar/watchtower-auto-deployment:latest
+    container_name: watchtower-app
+
+    ports:
+      - "3000:3000"
+
+    restart: unless-stopped
+
+  watchtower:
+    image: containrrr/watchtower:latest
+
+    container_name: watchtower
+
+    restart: unless-stopped
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+    command: --interval 30

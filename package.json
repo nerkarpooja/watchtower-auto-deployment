@@ -1,0 +1,32 @@
+{
+  "name": "watchtower-auto-deployment",
+  "version": "1.0.0",
+  "description": "Zero-touch Docker deployment using GitHub Actions, Docker Hub and Watchtower",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "keywords": [
+    "docker",
+    "docker-compose",
+    "watchtower",
+    "github-actions",
+    "aws",
+    "ec2",
+    "devops",
+    "ci-cd"
+  ],
+  "author": "Pooja Nerkar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerkarpooja/watchtower-auto-deployment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nerkarpooja/watchtower-auto-deployment/issues"
+  },
+  "homepage": "https://github.com/nerkarpooja/watchtower-auto-deployment",
+  "engines": {
+    "node": ">=20"
+  }
+}
